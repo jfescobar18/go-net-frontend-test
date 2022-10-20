@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      PORT: ${PORT}
+    volumes: 
+      - .:/usr/src/
+      - /usr/src/node_modules/
+    container_name: go-net-frontend-test
+    ports:
+      - 4004:4004

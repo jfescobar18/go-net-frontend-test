@@ -1,9 +1,18 @@
+// Libs and packages
+import { useEffect } from "react"
 import { useMutation } from "@apollo/client"
-import { useEffect, useState } from "react"
 import { toast } from "react-toastify"
+
+// Components
 import RegisterForm from "../../Components/RegisterForm"
-import { CREATE_CLIENT } from "../../GraphQL/Mutations"
+
+// Custom Hooks
 import { useForm } from "../../hooks/useForm"
+
+// Queries and Mutations
+import { CREATE_CLIENT } from "../../GraphQL/Mutations"
+
+// Types
 import { formEvent } from "../../types/common"
 
 const RegisterContainer = () => {

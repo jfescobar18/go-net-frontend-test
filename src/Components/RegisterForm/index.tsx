@@ -1,3 +1,4 @@
+// Libs and packages
 import {
     Button,
     Divider,
@@ -5,9 +6,14 @@ import {
     PhoneNumberField,
     TextField,
 } from "@aws-amplify/ui-react"
+
+// Components
+import { FormContent, FormElement } from "./styledComponents"
+
+// Types
 import { IClient } from "../../types/client"
 import { inputEvent, formEvent } from "../../types/common"
-import { FormContent, FormElement } from "./styledComponents"
+
 
 export interface IRegisterForm {
     updateForm: (key: string, value: string) => void

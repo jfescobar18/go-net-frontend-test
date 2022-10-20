@@ -1,3 +1,4 @@
+// Components
 import RegisterContainer from "./Containers/Register"
 
 const App = () => {

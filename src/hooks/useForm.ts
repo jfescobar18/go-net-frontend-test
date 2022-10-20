@@ -1,5 +1,5 @@
+// Libs and packages
 import { useCallback, useState } from "react"
-import { IClient } from "../types/client"
 
 export const useForm = (inputFields: any) => {
     const [formState, setFormState] = useState(inputFields)

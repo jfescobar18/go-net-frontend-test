@@ -10,4 +10,4 @@ RUN npm install
 
 COPY [".",  "/usr/src/"]
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]

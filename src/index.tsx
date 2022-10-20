@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import { ApolloProvider } from "@apollo/client"
+import ReactDOM from "react-dom/client"
+import client from "./Apollo"
+import App from "./App"
+import "@aws-amplify/ui-react/styles.css"
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    <ApolloProvider client={client}>
+        <App />
+    </ApolloProvider>
+)

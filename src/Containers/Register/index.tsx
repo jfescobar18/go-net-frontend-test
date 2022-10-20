@@ -2,9 +2,11 @@
 import { useEffect } from "react"
 import { useMutation } from "@apollo/client"
 import { toast } from "react-toastify"
+import { Link } from "react-router-dom"
 
 // Components
 import RegisterForm from "../../Components/RegisterForm"
+import NavigationButton from "../../Components/NavigationButton"
 
 // Custom Hooks
 import { useForm } from "../../hooks/useForm"
@@ -58,6 +60,8 @@ const RegisterContainer = () => {
                 formState={formState}
                 loading={loading}
             />
+
+            <NavigationButton link={"clients"} text={"Ver Clientes"} />
         </>
     )
 }
